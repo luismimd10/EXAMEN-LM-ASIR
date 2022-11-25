@@ -1,0 +1,97 @@
+*{
+    margin:0;
+}
+body {font-family: Arial, Helvetica, sans-serif}
+* {box-sizing: border-box;}
+
+.bg-img {
+    /* The image used */
+    background-image: url("./examen-asir-2223/media/spinning-record-player-with-vintage-vinyl.jpg");
+
+    min-height: 600px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+  /* Position the navbar container inside the image */
+.container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+  /* The navbar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    
+}
+
+  /* Navbar links */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('./examen-asir-2223/SpaceMono-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('./examen-asir-2223/Ubuntu-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+footer{
+    text-align:center;
+}
+
+@media screen and (max-width:700px){
+    .card{grid-template-columns: auto;}
+    .topnav.responsive {
+    position: absolute;
+    right: 0;
+    top: 0;
+    }
+}
+
+
+
